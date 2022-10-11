@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos personales</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        .a1{
+            display: flex;
+            justify-content: center;
+        }
+        .principal {
+            border: 2px solid;
+            border-color: blue;
+            width: 450px;
+            height: auto;
+        background-image: url("../../Fondos/shinobu-kocho-de-kimetsu-no-yaiba_3840x2160_xtrafondos.com\ \(1\).jpg");
+        }
+    </style>
+</head>
+<body style="background-color: rgb(182, 102, 102);">
+    <p style="color: aqua;">Rojas Hérnandez Axel Joel</p>
+    <p style="color: rgb(155, 195, 53);">181080176</p>
+    <div class="a1">
+        <div class="principal">
+            <form action="registro.php" name="formulario" method="POST">
+                <section>
+                    <br><br>
+                    <div class="product-card">
+                        <label for="nombre">Escribe tu nombre(s)
+                            <input id="nombre" autocomplete="" required="" type="text" placeholder="Escribe aquí tu nombre" />
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="product-card">
+                        <label for="apellidos" class="product-card">Apellidos: 
+                            <input id="apellidos" name="apellidos" required="" type="text" placeholder="Escribe aqui tus apellidos" />
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="product-card">
+                        <label for="noCtrl" class="product-card">No. Control 
+                            <input id="noCtrl" name="noCtrl" required="" type="text" placeholder="Escribe aqui tu No. Ctrl" />
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="product-card">
+                        <label for="sexo" class="product-card">Sexo 
+                            <input type="radio" name="sexo" value="h" /> hombre <input type="radio" name="sexo" value="m" /> mujer
+                        </label  
+                    </div>
+                    <br><br>
+                    <div class="product-card">
+                        <label for="formulario"> 
+                            <input type="submit" value="Guardar"/>
+                        </label>  
+                    </div>     
+                    <br><br>  
+                </section>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
