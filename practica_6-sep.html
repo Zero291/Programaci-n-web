@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #d68484;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="cards-container">
+            <form action="registro.php" name="" method="POST">
+                <section>
+                    
+                    <div class="product-card">
+                        <label for="nombre">Escribe tu nombre(s)
+                            <input id="nombre" autocomplete="" required="" type="text" placeholder="Escribe aquí tu nombre" />
+                        </label>
+                    </div>
+    
+                    <div class="product-card">
+                        <label for="apellidoPaterno" class="product-card">Escribe tu apellido paterno
+                            <input id="apellidoPaterno" name="apellidoPaterno" required="" type="text" placeholder="Escribe aqui tu apellido paterno" />
+                        </label>
+                    </div>
+    
+                    <div class="product-card">
+                        <label for="apellidoMaterno" class="product-card">Escribe tu apellido materno
+                            <input id="apellidoMaterno" name="apellidoMaterno" required="" type="text" placeholder="Escribe aquí tu apellido materno" />
+                        </label>
+                    </div>
+    
+                    <div class="product-card">
+                        <label for="fecha_nacimiento" class="product-card">Por favor ingresa tu fecha de nacimiento
+                            <input id="fecha_nacimiento" name="fecha_nacimiento" required="" type="date" />
+                        </label>
+                    </div>
+    
+                    <div class="product-card">
+                        <label for="sexo" class="product-card">Por favor elija su genero
+                            <select id="sexo" name="sexo" required="">
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Prefiero no contestar">Prefiero no contestar</option>
+                            </select>
+                        </label>
+                    </div>
+    
+                    <div class="product-card">
+                        <label for="telefono" class="product-card">Ingresa tu numero de teléfono
+                            <input id="telefono" style="width: 200 px; height: 15px;" name="telefono" pattern="[0-9]{10}" required="" type="tel" placeholder="Ingresa el número sin espacios" />
+                        </label>
+                    </div>
+        
+                    <div class="product-card">
+                        <label for="direccion" class="product-card">Ingresa tu dirección
+                            <input id="direccion" name="direccion" required="" type="text" placeholder="Escribe aquí tu dirección" />
+                        </label>
+                    </div>
+        
+                    <div class="product-card">
+                        <label for="correo" class="product-card">Escribe tu correo
+                            <input id="correo" name="correo" required="" type="email" placeholder="Escribe aquí tu correo" />
+                        </label>
+                    </div>
+    
+                    <div class="product-card">
+                        <input type="submit" />
+                    </div>               
+                    
+                </section>
+            </form>
+        </div>
+</body>
+</html>
